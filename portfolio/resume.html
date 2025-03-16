@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Arpit's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-poppins bg-gray-50 dark:bg-gray-900">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white dark:bg-gray-800 shadow-lg z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-gray-800 dark:text-white">
+                    Arpit<span class="text-blue-600">.dev</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400">Home</a>
+                    <a href="projects.html" class="text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400">Projects</a>
+                    <a href="blog.html" class="text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400">Blog</a>
+                    <a href="resume.html" class="text-blue-600 dark:text-blue-400">Resume</a>
+                </div>
+                <button id="darkModeToggle" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-700">
+                    <i class="fas fa-moon dark:hidden"></i>
+                    <i class="fas fa-sun hidden dark:block text-yellow-300"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Resume Header -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-900 dark:to-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+                    Resume & Contact
+                </h1>
+                <p class="text-xl text-gray-600 dark:text-gray-400 mb-8">
+                    Robotics Engineer | IoT Specialist | AI Enthusiast
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition duration-300">
+                        <i class="fas fa-download mr-2"></i>Download Resume
+                    </a>
+                    <a href="#contact" class="border-2 border-blue-600 text-blue-600 dark:text-blue-400 px-8 py-3 rounded-lg hover:bg-blue-600 hover:text-white transition duration-300">
+                        <i class="fas fa-envelope mr-2"></i>Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Content -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <!-- Education -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center">
+                        <i class="fas fa-graduation-cap text-blue-600 mr-3"></i>Education
+                    </h2>
+                    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
+                        <div class="mb-6">
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Integrated MTech in IoT</h3>
+                            <p class="text-gray-600 dark:text-gray-400">Final Year (Graduating Next Year)</p>
+                            <p class="text-gray-500 dark:text-gray-500 text-sm mt-2">
+                                Specializing in Internet of Things and Embedded Systems
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center">
+                        <i class="fas fa-briefcase text-blue-600 mr-3"></i>Experience
+                    </h2>
+                    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
+                        <div class="mb-6">
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Internship at DRDO, Pune</h3>
+                            <p class="text-gray-600 dark:text-gray-400">Current Position</p>
+                            <ul class="mt-4 space-y-2 text-gray-600 dark:text-gray-400">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Working on advanced robotics and control systems</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Developing AI-powered automation solutions</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Implementing IoT-based monitoring systems</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center">
+                        <i class="fas fa-tools text-blue-600 mr-3"></i>Technical Skills
+                    </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Robotics & IoT -->
+                        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Robotics & IoT</h3>
+                            <div class="space-y-3">
+                                <div class="flex items-center">
+                                    <div class="w-32 text-gray-600 dark:text-gray-400">Raspberry Pi</div>
+                                    <div class="flex-1 bg-gray-200 rounded-full h-2">
+                                        <div class="bg-blue-600 h-2 rounded-full" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-32 text-gray-600 dark:text-gray-400">ESP32</div>
+                                    <div class="flex-1 bg-gray-200 rounded-full h-2">
+                                        <div class="bg-blue-600 h-2 rounded-full" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-32 text-gray-600 dark:text-gray-400">Arduino</div>
+                                    <div class="flex-1 bg-gray-200 rounded-full h-2">
+                                        <div class="bg-blue-600 h-2 rounded-full" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-32 text-gray-600 dark:text-gray-400">ROS</div>
+                                    <div class="flex-1 bg-gray-200 rounded-full h-2">
+                                        <div class="bg-blue-600 h-2 rounded-full" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Programming -->
+                        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Programming</h3>
+                            <div class="space-y-3">
+                                <div class="flex items-center">
+                                    <div class="w-32 text-gray-600 dark:text-gray-400">Python</div>
+                                    <div class="flex-1 bg-gray-200 rounded-full h-2">
+                                        <div class="bg-blue-600 h-2 rounded-full" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-32 text-gray-600 dark:text-gray-400">C++</div>
+                                    <div class="flex-1 bg-gray-200 rounded-full h-2">
+                                        <div class="bg-blue-600 h-2 rounded-full" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-32 text-gray-600 dark:text-gray-400">MATLAB</div>
+                                    <div class="flex-1 bg-gray-200 rounded-full h-2">
+                                        <div class="bg-blue-600 h-2 rounded-full" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievements -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center">
+                        <i class="fas fa-trophy text-blue-600 mr-3"></i>Achievements
+                    </h2>
+                    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-award text-blue-600 mt-1 mr-3"></i>
+                                <div>
+                                    <h3 class="font-semibold text-gray-900 dark:text-white">Innovation Challenge Winner</h3>
+                                    <p class="text-gray-600 dark:text-gray-400">Developed a Deaf-accessible communication system</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-star text-blue-600 mt-1 mr-3"></i>
+                                <div>
+                                    <h3 class="font-semibold text-gray-900 dark:text-white">Tech Fest Organizer</h3>
+                                    <p class="text-gray-600 dark:text-gray-400">Led the organization of college technical events</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-robot text-blue-600 mt-1 mr-3"></i>
+                                <div>
+                                    <h3 class="font-semibold text-gray-900 dark:text-white">Robotics Innovation</h3>
+                                    <p class="text-gray-600 dark:text-gray-400">Optimized maze-solving robot sensor positioning</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Section -->
+                <div id="contact" class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center">
+                        <i class="fas fa-envelope text-blue-600 mr-3"></i>Contact
+                    </h2>
+                    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <a href="#" class="flex items-center space-x-3 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition duration-300">
+                                <i class="fab fa-github text-2xl"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="#" class="flex items-center space-x-3 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition duration-300">
+                                <i class="fab fa-linkedin text-2xl"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="#" class="flex items-center space-x-3 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition duration-300">
+                                <i class="fas fa-envelope text-2xl"></i>
+                                <span>Email</span>
+                            </a>
+                            <a href="#" class="flex items-center space-x-3 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition duration-300">
+                                <i class="fab fa-twitter text-2xl"></i>
+                                <span>Twitter</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold">Arpit<span class="text-blue-600">.dev</span></h3>
+                    <p class="text-gray-400 mt-2">Building the future with robotics and AI</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-blue-600 transition duration-300">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a href="#" class="hover:text-blue-600 transition duration-300">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a href="#" class="hover:text-blue-600 transition duration-300">
+                        <i class="fas fa-envelope text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Arpit. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Dark mode toggle
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const html = document.documentElement;
+
+        // Check for saved dark mode preference
+        if (localStorage.getItem('darkMode') === 'enabled' || 
+            (localStorage.getItem('darkMode') !== 'disabled' && 
+             window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            html.classList.add('dark');
+        }
+
+        darkModeToggle.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            localStorage.setItem('darkMode', html.classList.contains('dark') ? 'enabled' : 'disabled');
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
