@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arpit - Robotics Engineer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-poppins bg-gray-50 dark:bg-gray-900">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white dark:bg-gray-800 shadow-lg z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-gray-800 dark:text-white">
+                    Arpit<span class="text-blue-600">.dev</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400">Home</a>
+                    <a href="projects.html" class="text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400">Projects</a>
+                    <a href="blog.html" class="text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400">Blog</a>
+                    <a href="resume.html" class="text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400">Resume</a>
+                </div>
+                <button id="darkModeToggle" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-700">
+                    <i class="fas fa-moon dark:hidden"></i>
+                    <i class="fas fa-sun hidden dark:block text-yellow-300"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-900 dark:to-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+                        Hi, I'm Arpit 👋
+                    </h1>
+                    <h2 class="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-6">
+                        Robotics Engineer | IoT Enthusiast | DRDO Intern
+                    </h2>
+                    <p class="text-gray-600 dark:text-gray-400 mb-8">
+                        Final year Integrated MTech student in IoT, passionate about Robotics, AI, and Embedded Systems. 
+                        Currently interning at DRDO, Pune.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#projects" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300">
+                            View Projects
+                        </a>
+                        <a href="#contact" class="border-2 border-blue-600 text-blue-600 dark:text-blue-400 px-6 py-3 rounded-lg hover:bg-blue-600 hover:text-white transition duration-300">
+                            Contact Me
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div class="w-64 h-64 bg-blue-600 rounded-full opacity-10 absolute -top-4 -left-4"></div>
+                        <div class="w-64 h-64 bg-indigo-600 rounded-full opacity-10 absolute -bottom-4 -right-4"></div>
+                        <div class="relative z-10 bg-white dark:bg-gray-800 p-6 rounded-xl shadow-xl">
+                            <div class="text-center mb-4">
+                                <i class="fas fa-user-circle text-6xl text-blue-600 mb-4"></i>
+                                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">ENTJ Personality</h3>
+                                <p class="text-gray-600 dark:text-gray-400">Career Goal: Robotics Engineer</p>
+                            </div>
+                            <div class="space-y-2">
+                                <div class="flex items-center">
+                                    <i class="fas fa-graduation-cap w-8 text-blue-600"></i>
+                                    <span class="text-gray-700 dark:text-gray-300">Integrated MTech in IoT</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-briefcase w-8 text-blue-600"></i>
+                                    <span class="text-gray-700 dark:text-gray-300">DRDO Intern, Pune</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Robotics & IoT -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Robotics & IoT</h3>
+                    <ul class="space-y-2 text-gray-600 dark:text-gray-400">
+                        <li>Raspberry Pi</li>
+                        <li>ESP32</li>
+                        <li>Arduino</li>
+                        <li>ROS</li>
+                        <li>L298N</li>
+                        <li>MPU6050</li>
+                    </ul>
+                </div>
+
+                <!-- Embedded Systems -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Embedded Systems</h3>
+                    <ul class="space-y-2 text-gray-600 dark:text-gray-400">
+                        <li>ARM Microcontrollers</li>
+                        <li>GPS & SIM Modules</li>
+                        <li>Wireless Sensor Networks</li>
+                    </ul>
+                </div>
+
+                <!-- AI & Machine Learning -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">AI & Machine Learning</h3>
+                    <ul class="space-y-2 text-gray-600 dark:text-gray-400">
+                        <li>LLM-based Control</li>
+                        <li>Speech Recognition</li>
+                        <li>Gesture Recognition</li>
+                    </ul>
+                </div>
+
+                <!-- Programming -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Programming</h3>
+                    <ul class="space-y-2 text-gray-600 dark:text-gray-400">
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>MATLAB</li>
+                        <li>Networking & Protocols</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="py-20 bg-gray-100 dark:bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- General-Purpose Robot -->
+                <div class="bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <div class="text-blue-600 text-4xl mb-4">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">General-Purpose Robot (GPR)</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">Track-based movement, robotic arm, camera vision, voice-controlled, face recognition</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full text-sm">ESP32</span>
+                            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full text-sm">Raspberry Pi</span>
+                            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full text-sm">LLM AI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Smart Office Communication System -->
+                <div class="bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <div class="text-blue-600 text-4xl mb-4">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Smart Office Communication</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">Deaf-friendly office communication with LAN-based video calling and speech-to-sign conversion</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full text-sm">Python</span>
+                            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full text-sm">Raspberry Pi</span>
+                            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full text-sm">AI Models</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI-Based Small Rover -->
+                <div class="bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <div class="text-blue-600 text-4xl mb-4">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">AI-Based Small Rover</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">Voice-controlled navigation with precise movement commands and MPU6050 integration</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full text-sm">ESP32</span>
+                            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full text-sm">DC Motors</span>
+                            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full text-sm">MPU6050</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="projects.html" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition duration-300">
+                    View All Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Interests Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">Beyond Technology</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Sports & Fitness -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Sports & Fitness</h3>
+                    <ul class="space-y-2 text-gray-600 dark:text-gray-400">
+                        <li>🏸 Left-handed Badminton Player</li>
+                        <li>🏏 Cricket Enthusiast</li>
+                        <li>🚴‍♂️ Cycling (16-17 km, 4-5 days/week)</li>
+                    </ul>
+                </div>
+
+                <!-- Music -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Music</h3>
+                    <p class="text-gray-600 dark:text-gray-400">
+                        Plays Bollywood songs on a custom PVC flute 🎵
+                    </p>
+                </div>
+
+                <!-- Gardening -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Gardening</h3>
+                    <ul class="space-y-2 text-gray-600 dark:text-gray-400">
+                        <li>🌳 Bonsai Making</li>
+                        <li>🏡 Home Garden Management</li>
+                        <li>🥭 Managing 50 Mango Trees</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold">Arpit<span class="text-blue-600">.dev</span></h3>
+                    <p class="text-gray-400 mt-2">Building the future with robotics and AI</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-blue-600 transition duration-300">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a href="#" class="hover:text-blue-600 transition duration-300">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a href="#" class="hover:text-blue-600 transition duration-300">
+                        <i class="fas fa-envelope text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Arpit. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Dark mode toggle
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const html = document.documentElement;
+
+        // Check for saved dark mode preference
+        if (localStorage.getItem('darkMode') === 'enabled' || 
+            (localStorage.getItem('darkMode') !== 'disabled' && 
+             window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            html.classList.add('dark');
+        }
+
+        darkModeToggle.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            localStorage.setItem('darkMode', html.classList.contains('dark') ? 'enabled' : 'disabled');
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
